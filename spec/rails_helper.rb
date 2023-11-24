@@ -87,4 +87,7 @@ RSpec.configure do |config|
     config.hook_into :faraday
     config.filter_sensitive_data('<SECRET>') { Ipstack::Service::API_KEY }
   end
+
+  config.include(Shoulda::Matchers::ActiveModel, type: :model)
+  config.include(Shoulda::Matchers::ActiveRecord, type: :model)
 end
