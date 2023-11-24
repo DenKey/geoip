@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.ipstack.com/fakestring?access_key=<SECRET>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      date:
+      - Thu, 23 Nov 2023 23:50:57 GMT
+      x-apilayer-transaction-id:
+      - b93bc601-d01f-405e-940f-b70cd5e7827d
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-methods:
+      - GET, POST, HEAD, OPTIONS
+      access-control-allow-headers:
+      - "*"
+      x-quota-limit:
+      - '1000'
+      x-quota-remaining:
+      - '990'
+      x-increment-usage:
+      - '1'
+      x-request-time:
+      - '0.078'
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"error":{"code":106,"type":"invalid_ip_address","info":"The
+        IP Address supplied is invalid."}}'
+  recorded_at: Thu, 23 Nov 2023 23:50:57 GMT
+recorded_with: VCR 6.2.0

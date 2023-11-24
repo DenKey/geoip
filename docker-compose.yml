@@ -24,6 +24,7 @@ services:
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
       BUNDLE_GEMFILE: /app/Gemfile
+      IPSTACK_API_KEY: 36b9b14567ea89672c9f6ff1de91218c
     command: script/docker-entrypoint.sh
     networks:
       - backend

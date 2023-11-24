@@ -1,0 +1,40 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: http://api.ipstack.com/facebook.com?access_key=<SECRET>
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - Faraday v2.7.12
+    response:
+      status:
+        code: 500
+        message: FAILURE
+      headers:
+        content-type:
+          - application/json
+        transfer-encoding:
+          - chunked
+        date:
+          - Thu, 23 Nov 2023 23:51:16 GMT
+        x-apilayer-transaction-id:
+          - ede09aa3-00ec-47fd-abad-570bc815c06c
+        access-control-allow-origin:
+          - "*"
+        access-control-allow-methods:
+          - GET, POST, HEAD, OPTIONS
+        access-control-allow-headers:
+          - "*"
+        x-quota-limit:
+          - '1000'
+        x-quota-remaining:
+          - '989'
+        x-increment-usage:
+          - '1'
+        x-request-time:
+          - '0.028'
+    recorded_at: Thu, 23 Nov 2023 23:51:16 GMT
+recorded_with: VCR 6.2.0
