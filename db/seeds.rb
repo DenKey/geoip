@@ -51,7 +51,7 @@ data = [
   },
   {
     ip: '52.14.144.171',
-    domain: 'cocalcola.com',
+    domain: 'cocacola.com',
     coordinate: [-82.99945831298828, 39.99557876586914]
   },
   {

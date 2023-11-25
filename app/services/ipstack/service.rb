@@ -10,7 +10,7 @@ module Ipstack
     end
 
     # Accept string with IP address or domain
-    def check(resource)
+    def call(resource)
       @client.get("#{resource}", default_params)
     end
 

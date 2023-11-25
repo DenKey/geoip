@@ -7,5 +7,5 @@ class IpAddress < ApplicationRecord
     ipv6: 1
   }
 
-  has_and_belongs_to_many :domains
+  has_and_belongs_to_many :domains, dependent: :destroy
 end
