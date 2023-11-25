@@ -1,0 +1,43 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: http://api.ipstack.com/facebook.com?access_key=<SECRET>
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - Faraday v2.7.12
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        content-type:
+          - application/json
+        transfer-encoding:
+          - chunked
+        date:
+          - Thu, 23 Nov 2023 23:51:16 GMT
+        x-apilayer-transaction-id:
+          - ede09aa3-00ec-47fd-abad-570bc815c06c
+        access-control-allow-origin:
+          - "*"
+        access-control-allow-methods:
+          - GET, POST, HEAD, OPTIONS
+        access-control-allow-headers:
+          - "*"
+        x-quota-limit:
+          - '1000'
+        x-quota-remaining:
+          - '989'
+        x-increment-usage:
+          - '1'
+        x-request-time:
+          - '0.028'
+      body:
+        encoding: UTF-8
+        string: '{"ip": "31.64.163.50", "type": "ipv4", "continent_code": "EU", "continent_name": "Europe", "country_code": "GB", "country_name": "United Kingdom", "region_code": "ENG", "region_name": "England", "city": "Canning Town", "zip": "E12", "latitude": 51.5, "longitude": 0.08330000191926956, "location": {"geoname_id": 11549407, "capital": "London", "languages": [{"code": "en", "name": "English", "native": "English"}], "country_flag": "https://assets.ipstack.com/flags/gb.svg", "country_flag_emoji": "\ud83c\uddec\ud83c\udde7", "country_flag_emoji_unicode": "U+1F1EC U+1F1E7", "calling_code": "44", "is_eu": true}}'
+    recorded_at: Thu, 23 Nov 2023 23:51:16 GMT
+recorded_with: VCR 6.2.0
