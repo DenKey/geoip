@@ -12,8 +12,5 @@ fi
 bin/rails db:create
 bin/rails db:migrate
 bin/rails db:fixtures:load
-if ! [[ -f .db-seeded ]]; then
-  bin/rails db:seed
-  touch .db-seeded
-fi
+bin/rails db:seed
 foreman start -f Procfile.dev

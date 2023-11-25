@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_24_131450) do
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_domains_on_name", unique: true
   end
 
   create_table "domains_ip_addresses", force: :cascade do |t|
@@ -33,6 +34,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_24_131450) do
     t.point "coordinate", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["address"], name: "index_ip_addresses_on_address", unique: true
     t.index ["coordinate"], name: "index_ip_addresses_on_coordinate", using: :gist
   end
 
